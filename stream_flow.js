@@ -1,7 +1,7 @@
 console.log("connection working");
 
 // Define variables for our base layers
-var streetmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.streets",
@@ -9,14 +9,14 @@ var streetmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
 });
 
 // satellite map background tile layer
-var satellitemap =  L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var satellitemap =  L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 18,
     id: "mapbox.satellite",
     accessToken: API_KEY
 });
 
-var darkmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.dark",
@@ -56,7 +56,7 @@ var map = L.map("map", {
 
 
 // Add 'darkmap' tile layer to the map as default
-Stamen_Watercolor.addTo(map);
+darkmap.addTo(map);
 
 
 // Create an overlay object
@@ -157,26 +157,6 @@ console.log(sites);
   });
 };
 
-
-// function getSiteData(site) {
-//   result = sites.filter(obj => site.includes(obj.names));
-//   // console.log(site);
-//   timeseries_id = result[0].ts_id;
-//   var query_url = url + timeseries_id
-//   console.log(query_url);
-//     d3.json(url).then(function(data) {
-    
-//     // Grab values from the data json object to build the plots
-//     var dates = unpack(data[0].data, 0);
-//     var flow = unpack(data[0].data, 1);
-//     var start_date = dates[0]
-//     var end_date = dates[dates.length - 1]
-//     console.log(start_date);
-//     console.log(end_date);
-//     console.log(dates);
-//     console.log(flow);
-//     });  
-// }
 
 function setBubblePlot(site) {
   
