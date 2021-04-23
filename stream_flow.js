@@ -186,18 +186,51 @@ function setBubblePlot(site) {
     };
 
     var data = [trace1];
-
+    
     var layout = {
-        title: 'Stream Discharge for <br>'+ site,
-            yaxis: {
-              autorange: true,
-              type: "linear",
-                title: {
-                    text: 'Stream Flow (cfs)'
-                }
-            }
+      title: 'Stream Discharge for <br>'+ site,
+      xaxis: {
+        autorange: true,
+        range: [start_date, end_date],
+        rangeselector: {buttons: [
+            {
+              count: 2,
+              label: '2d',
+              step: 'day',
+              stepmode: 'backward'
+            },
+            {
+              count: 1,
+              label: '1m',
+              step: 'month',
+              stepmode: 'backward'
+            },
+            {
+              count: 6,
+              label: '6m',
+              step: 'month',
+              stepmode: 'backward'
+            },
+            {
+            step: 'year',
+            stepmode: 'backward',
+            count: 1,
+            label: '1y'
+            }, 
+            {step: 'all'}
+          ]},
+        rangeslider: {range: [start_date, end_date]},
+        type: 'date'
+      },
+      yaxis: {
+        autorange: true,
+        type: 'linear',
+        title: {
+          text: 'Stream Flow (cfs)'
+        }  
+      }
+    }
 
-    };
     var config = {responsive: true}
 
     Plotly.newPlot('plotdiv', data, layout, config, {showSendToCloud: true});
