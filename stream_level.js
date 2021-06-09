@@ -105,27 +105,58 @@ var sites = [{
   names: "CPA01",
   location: [44.964088, -93.672554],
   subwatershed: "Painters Creek",
-  ts_id: "4672010"
+  ts_id: "5030010"
 },
 
 {
   names: "CMH01",
   location: [44.9412, -93.4551],
   subwatershed: "Minnehaha Creek",
-  ts_id: "4774010"
+  ts_id: "5009010"
 }
-// ,
-// {
-//   names: "CMH04",
-//   location: [44.901323, -93.332248],
-//   subwatershed: "Minnehaha Creek",
-//   ts_id: "2005010"
-// },
-// {
-//   names: "CMH24",
-//   location: [44.915574, -93.242167],
-//   subwatershed: "Minnehaha Creek"
-// }
+,
+{
+  names: "CMH04",
+  location: [44.901323, -93.332248],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5088010"
+},
+{
+  names: "CMH02",
+  location: [44.9427, -93.3935],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5013010"
+},
+{
+  names: "CMH03Up",
+  location: [44.91235, -93.34251],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5084010"
+},
+{
+  names: "CDU01",
+  location: [44.95005, -93.66518],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5080010"
+},
+{
+  names: "CGL01",
+  location: [44.97818, -93.49565],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5039010"
+},
+{
+  names: "LNK01",
+  location: [44.915212, -93.241868],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5091010"
+},
+{
+  names: "CMH24",
+  location: [44.915574, -93.242167],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "4145010"
+}
 ];
 
 function unpack(rows, index) {

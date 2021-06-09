@@ -109,14 +109,14 @@ var sites = [{
   names: "CPA01",
   location: [44.964088, -93.672554],
   subwatershed: "Painters Creek",
-  ts_id: "4672010"
+  ts_id: "5033010"
 },
 
 {
   names: "CMH01",
   location: [44.9412, -93.4551],
   subwatershed: "Minnehaha Creek",
-  ts_id: "4774010"
+  ts_id: "5017010"
 }
 ];
 
