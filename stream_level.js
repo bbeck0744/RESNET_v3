@@ -107,6 +107,13 @@ var sites = [{
   subwatershed: "Painters Creek",
   ts_id: "5030010"
 },
+{
+  names: "CLA01",
+  location: [44.9318, -93.6693],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5182010"
+}
+,
 
 {
   names: "CMH01",
@@ -147,7 +154,7 @@ var sites = [{
 },
 {
   names: "LNK01",
-  location: [44.915212, -93.241868],
+  location: [44.908743, -93.241776],
   subwatershed: "Minnehaha Creek",
   ts_id: "5091010"
 },
