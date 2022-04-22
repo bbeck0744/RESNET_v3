@@ -117,6 +117,18 @@ var sites = [{
   location: [44.9412, -93.4551],
   subwatershed: "Minnehaha Creek",
   ts_id: "5017010"
+},
+{
+names: "CSI02",
+location: [44.900948, -93.734217],
+subwatershed: "Six Mile Creek",
+ts_id: "5795010"
+},
+{
+  names: "CMH04",
+  location: [44.901323, -93.332248],
+  subwatershed: "Minnehaha Creek",
+  ts_id: "5096010"
 }
 ];
 

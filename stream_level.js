@@ -102,15 +102,9 @@ watershedJson.addTo(layers.BOUNDARIES);
 // Script to create graph and monitoring locations
 // =================================================================================================
 var sites = [{
-  names: "CPA01",
-  location: [44.964088, -93.672554],
-  subwatershed: "Painters Creek",
-  ts_id: "5030010"
-},
-{
   names: "CLA01",
   location: [44.9318, -93.6693],
-  subwatershed: "Minnehaha Creek",
+  subwatershed: "Langdon",
   ts_id: "5182010"
 }
 ,
@@ -143,13 +137,13 @@ var sites = [{
 {
   names: "CDU01",
   location: [44.95005, -93.66518],
-  subwatershed: "Minnehaha Creek",
+  subwatershed: "Dutch",
   ts_id: "5080010"
 },
 {
   names: "CGL01",
   location: [44.97818, -93.49565],
-  subwatershed: "Minnehaha Creek",
+  subwatershed: "Gleason",
   ts_id: "5039010"
 },
 {
@@ -303,7 +297,7 @@ function setBubblePlot(site) {
 };
 
 function init() {
-  var firstSite = "CPA01";
+  var firstSite = "CMH02";
   setBubblePlot(firstSite)
 };
 
