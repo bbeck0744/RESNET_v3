@@ -153,6 +153,12 @@ var sites = [{
   ts_id: "5091010"
 },
 {
+  names: "CVI01",
+  location: [44.8846810, -93.62644000],
+  subwatershed: "Virginia",
+  ts_id: "5287010"
+},
+{
   names: "CMH24",
   location: [44.915574, -93.242167],
   subwatershed: "Minnehaha Creek",
